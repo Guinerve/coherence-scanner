@@ -1,0 +1,136 @@
+[
+ {
+  "id": "32228",
+  "title": "Balance of Power: 2026 Midterms",
+  "slug": "balance-of-power-2026-midterms",
+  "negRisk": true,
+  "enableNegRisk": true,
+  "endDate": "2026-11-04T04:59:00Z",
+  "description": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States mi",
+  "markets": [
+   {
+    "id": "562828",
+    "question": "2026 Balance of Power: D Senate, D House",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.615\", \"0.385\"]",
+    "bestBid": 0.61,
+    "bestAsk": 0.62,
+    "groupItemTitle": "Democrats Sweep",
+    "active": true,
+    "closed": false,
+    "volume24hr": 11072.87889,
+    "endDate": "2026-11-04T04:59:00Z",
+    "description": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States mi"
+   },
+   {
+    "id": "562829",
+    "question": "2026 Balance of Power: D Senate, R House",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.0085\", \"0.9915\"]",
+    "bestBid": 0.008,
+    "bestAsk": 0.009,
+    "groupItemTitle": "D Senate, R House",
+    "active": true,
+    "closed": false,
+    "volume24hr": 504377.5155640001,
+    "endDate": "2026-11-04T04:59:00Z",
+    "description": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States mi"
+   },
+   {
+    "id": "562830",
+    "question": "2026 Balance of Power: R Senate, D House",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.285\", \"0.715\"]",
+    "bestBid": 0.28,
+    "bestAsk": 0.29,
+    "groupItemTitle": "R Senate, D House",
+    "active": true,
+    "closed": false,
+    "volume24hr": 117006.17322,
+    "endDate": "2026-11-04T04:59:00Z",
+    "description": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States mi"
+   },
+   {
+    "id": "562831",
+    "question": "2026 Balance of Power: R Senate, R House",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.085\", \"0.915\"]",
+    "bestBid": 0.08,
+    "bestAsk": 0.09,
+    "groupItemTitle": "Republicans Sweep",
+    "active": true,
+    "closed": false,
+    "volume24hr": 147325.94914299998,
+    "endDate": "2026-11-04T04:59:00Z",
+    "description": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States mi"
+   },
+   {
+    "id": "562832",
+    "question": "2026 Balance of Power: Other",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.0015\", \"0.9985\"]",
+    "bestBid": 0.001,
+    "bestAsk": 0.002,
+    "groupItemTitle": "Other",
+    "active": true,
+    "closed": false,
+    "volume24hr": 153999.116,
+    "endDate": "2026-11-04T04:59:00Z",
+    "description": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States mi"
+   }
+  ]
+ },
+ {
+  "id": "1171733",
+  "title": "Who wins the Senate pending Hormuz Agreement by Oct 23?",
+  "slug": "who-wins-the-senate-pending-hormuz-agreement",
+  "negRisk": true,
+  "enableNegRisk": true,
+  "endDate": "2026-11-04T04:59:00Z",
+  "description": "This market will resolve to \"Hormuz Agreement; R Senate\" if a Hormuz Agreement is announced by October 23, 2026, 11:59 PM ET, and the Republican Party wins control of the United States Senate in the 2",
+  "markets": [
+   {
+    "id": "5568257",
+    "question": "Will there be a Hormuz agreement and the Republicans win the Senate?",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.04\", \"0.96\"]",
+    "bestBid": 0.039,
+    "bestAsk": 0.041,
+    "groupItemTitle": "Hormuz Agreement; R Senate",
+    "active": true,
+    "closed": false,
+    "volume24hr": 276592.79129699996,
+    "endDate": "2026-11-04T04:59:00Z",
+    "description": "This market will resolve to \"Hormuz Agreement; R Senate\" if a Hormuz Agreement is announced by October 23, 2026, 11:59 PM ET, and the Republican Party wins control of the United States Senate in the 2"
+   },
+   {
+    "id": "5568258",
+    "question": "Will there be a Hormuz agreement and the Democrats win the Senate?",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.0675\", \"0.9325\"]",
+    "bestBid": 0.067,
+    "bestAsk": 0.068,
+    "groupItemTitle": "Hormuz Agreement; D Senate",
+    "active": true,
+    "closed": false,
+    "volume24hr": 148994.570384,
+    "endDate": "2026-11-04T04:59:00Z",
+    "description": "This market will resolve to \"Hormuz Agreement; R Senate\" if a Hormuz Agreement is announced by October 23, 2026, 11:59 PM ET, and the Republican Party wins control of the United States Senate in the 2"
+   },
+   {
+    "id": "5568259",
+    "question": "Will there be no Hormuz agreement?",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.8885\", \"0.1115\"]",
+    "bestBid": 0.888,
+    "bestAsk": 0.889,
+    "groupItemTitle": "No Hormuz Agreement",
+    "active": true,
+    "closed": false,
+    "volume24hr": 220051.953392,
+    "endDate": "2026-11-04T04:59:00Z",
+    "description": "This market will resolve to \"Hormuz Agreement; R Senate\" if a Hormuz Agreement is announced by October 23, 2026, 11:59 PM ET, and the Republican Party wins control of the United States Senate in the 2"
+   }
+  ]
+ }
+]

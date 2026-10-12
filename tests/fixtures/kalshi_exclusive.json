@@ -1,0 +1,198 @@
+[
+ {
+  "event_ticker": "KXNEXTNATOSECGEN-99",
+  "title": "Who will be the next Secretary General of NATO?",
+  "mutually_exclusive": true,
+  "category": "Elections",
+  "markets": [
+   {
+    "ticker": "KXNEXTNATOSECGEN-99-KIOH",
+    "title": "Will Klaus Iohannis be the next Secretary General of NATO?",
+    "yes_sub_title": "Klaus Iohannis",
+    "yes_bid_dollars": "0.0100",
+    "yes_ask_dollars": "0.0800",
+    "last_price_dollars": "0.0800",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2099-01-08T15:00:00Z",
+    "rules_primary": "If Klaus Iohannis formally holds the position of Secretary General of NATO, and is the first such subject to do so after Issuance, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEXTNATOSECGEN-99-KKAL",
+    "title": "Will Kaja Kallas be the next Secretary General of NATO?",
+    "yes_sub_title": "Kaja Kallas",
+    "yes_bid_dollars": "0.2700",
+    "yes_ask_dollars": "0.4500",
+    "last_price_dollars": "0.2100",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2099-01-08T15:00:00Z",
+    "rules_primary": "If Kaja Kallas formally holds the position of Secretary General of NATO, and is the first such subject to do so after Issuance, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEXTNATOSECGEN-99-BWAL",
+    "title": "Will Ben Wallace be the next Secretary General of NATO?",
+    "yes_sub_title": "Ben Wallace",
+    "yes_bid_dollars": "0.0100",
+    "yes_ask_dollars": "0.0500",
+    "last_price_dollars": "0.0100",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2099-01-08T15:00:00Z",
+    "rules_primary": "If Ben Wallace formally holds the position of Secretary General of NATO, and is the first such subject to do so after Issuance, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEXTNATOSECGEN-99-MFRE",
+    "title": "Will Mette Frederiksen be the next Secretary General of NATO?",
+    "yes_sub_title": "Mette Frederiksen",
+    "yes_bid_dollars": "0.2700",
+    "yes_ask_dollars": "0.3400",
+    "last_price_dollars": "0.2700",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2099-01-08T15:00:00Z",
+    "rules_primary": "If Mette Frederiksen formally holds the position of Secretary General of NATO, and is the first such subject to do so after Issuance, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEXTNATOSECGEN-99-ULEY",
+    "title": "Will Ursula von der Leyen be the next Secretary General of NATO?",
+    "yes_sub_title": "Ursula von der Leyen",
+    "yes_bid_dollars": "0.0100",
+    "yes_ask_dollars": "0.0600",
+    "last_price_dollars": "0.0100",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2099-01-08T15:00:00Z",
+    "rules_primary": "If Ursula von der Leyen formally holds the position of Secretary General of NATO, and is the first such subject to do so after Issuance, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEXTNATOSECGEN-99-PPAV",
+    "title": "Will Petr Pavel be the next Secretary General of NATO?",
+    "yes_sub_title": "Petr Pavel",
+    "yes_bid_dollars": "0.0100",
+    "yes_ask_dollars": "0.0800",
+    "last_price_dollars": "0.0900",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2099-01-08T15:00:00Z",
+    "rules_primary": "If Petr Pavel formally holds the position of Secretary General of NATO, and is the first such subject to do so after Issuance, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEXTNATOSECGEN-99-ASTU",
+    "title": "Will Alexander Stubb be the next Secretary General of NATO?",
+    "yes_sub_title": "Alexander Stubb",
+    "yes_bid_dollars": "0.1200",
+    "yes_ask_dollars": "0.1300",
+    "last_price_dollars": "0.1100",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2099-01-08T15:00:00Z",
+    "rules_primary": "If Alexander Stubb formally holds the position of Secretary General of NATO, and is the first such subject to do so after Issuance, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEXTNATOSECGEN-99-KSTA",
+    "title": "Will Keir Starmer be the next Secretary General of NATO?",
+    "yes_sub_title": "Keir Starmer",
+    "yes_bid_dollars": "0.1500",
+    "yes_ask_dollars": "0.2300",
+    "last_price_dollars": "0.1500",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2099-01-08T15:00:00Z",
+    "rules_primary": "If Keir Starmer formally holds the position of Secretary General of NATO, and is the first such subject to do so after Issuance, then the market resolves to Yes."
+   }
+  ]
+ },
+ {
+  "event_ticker": "KXNEWPOPE-70",
+  "title": "Who will the next Pope be?",
+  "mutually_exclusive": true,
+  "category": "Elections",
+  "markets": [
+   {
+    "ticker": "KXNEWPOPE-70-PPIZ",
+    "title": "Who will the next Pope be?",
+    "yes_sub_title": "Pierbattista Pizzaballa",
+    "yes_bid_dollars": "0.0300",
+    "yes_ask_dollars": "0.0450",
+    "last_price_dollars": "0.0450",
+    "status": "active",
+    "volume_24h_fp": "61.24",
+    "close_time": "2070-01-01T15:00:00Z",
+    "rules_primary": "If Pierbattista Pizzaballa becomes the first person elected Pope before Jan 1, 2070, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEWPOPE-70-PPAR",
+    "title": "Who will the next Pope be?",
+    "yes_sub_title": "Pietro Parolin",
+    "yes_bid_dollars": "0.0400",
+    "yes_ask_dollars": "0.0580",
+    "last_price_dollars": "0.0580",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2070-01-01T15:00:00Z",
+    "rules_primary": "If Pietro Parolin becomes the first person elected Pope before Jan 1, 2070, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEWPOPE-70-FAMB",
+    "title": "Who will the next Pope be?",
+    "yes_sub_title": "Fridolin Ambongo",
+    "yes_bid_dollars": "0.0200",
+    "yes_ask_dollars": "0.0330",
+    "last_price_dollars": "0.0330",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2070-01-01T15:00:00Z",
+    "rules_primary": "If Fridolin Ambongo becomes the first person elected Pope before Jan 1, 2070, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEWPOPE-70-LANT",
+    "title": "Who will the next Pope be?",
+    "yes_sub_title": "Luis Antonio Tagle",
+    "yes_bid_dollars": "0.0410",
+    "yes_ask_dollars": "0.0690",
+    "last_price_dollars": "0.0400",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2070-01-01T15:00:00Z",
+    "rules_primary": "If Luis Antonio Tagle becomes the first person elected Pope before Jan 1, 2070, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEWPOPE-70-MZUP",
+    "title": "Who will the next Pope be?",
+    "yes_sub_title": "Matteo Zuppi",
+    "yes_bid_dollars": "0.0240",
+    "yes_ask_dollars": "0.0380",
+    "last_price_dollars": "0.0240",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2070-01-01T15:00:00Z",
+    "rules_primary": "If Matteo Zuppi becomes the first person elected Pope before Jan 1, 2070, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEWPOPE-70-PERD",
+    "title": "Who will the next Pope be?",
+    "yes_sub_title": "Peter Erdo",
+    "yes_bid_dollars": "0.0220",
+    "yes_ask_dollars": "0.0330",
+    "last_price_dollars": "0.0220",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2070-01-01T15:00:00Z",
+    "rules_primary": "If Peter Erdo becomes the first person elected Pope before Jan 1, 2070, then the market resolves to Yes."
+   },
+   {
+    "ticker": "KXNEWPOPE-70-AARB",
+    "title": "Who will the next Pope be?",
+    "yes_sub_title": "Anders Arborelius",
+    "yes_bid_dollars": "0.0150",
+    "yes_ask_dollars": "0.0360",
+    "last_price_dollars": "0.0360",
+    "status": "active",
+    "volume_24h_fp": "0.00",
+    "close_time": "2070-01-01T15:00:00Z",
+    "rules_primary": "If Anders Arborelius becomes the first person elected Pope before Jan 1, 2070, then the market resolves to Yes."
+   }
+  ]
+ }
+]

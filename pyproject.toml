@@ -1,0 +1,26 @@
+[project]
+name = "coherence-scanner"
+version = "0.1.0"
+description = "Find where linked prediction markets contradict each other. Read-only research on public data: no trading."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.27", "numpy>=1.26", "scipy>=1.11", "pyyaml>=6", "rapidfuzz>=3.9"]
+
+[project.scripts]
+coherence-scanner = "coherence_scanner.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/coherence_scanner"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
