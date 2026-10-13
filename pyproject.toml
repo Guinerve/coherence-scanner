@@ -1,7 +1,7 @@
 [project]
 name = "coherence-scanner"
 version = "0.1.0"
-description = "Find where linked prediction markets contradict each other. Read-only research on public data: no trading."
+description = "Find where linked prediction markets contradict each other. It reads public market data only and never places trades."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = ["httpx>=0.27", "numpy>=1.26", "scipy>=1.11", "pyyaml>=6", "rapidfuzz>=3.9"]

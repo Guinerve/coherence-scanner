@@ -14,7 +14,7 @@ from .models import Event, Market
 
 
 def snapshot(pages: int) -> tuple[list[Event], list[Event]]:
-    with httpx.Client(timeout=30, headers={"User-Agent": "coherence-scanner/0.1 (read-only research)"}) as http:
+    with httpx.Client(timeout=30, headers={"User-Agent": "coherence-scanner/0.1 (research, reads only)"}) as http:
         return venues.fetch_polymarket(http, pages), venues.fetch_kalshi(http, pages)
 
 
