@@ -1,0 +1,144 @@
+<svg class="rich-terminal" viewBox="0 0 1385 562.4" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generated with Rich https://www.textualize.io -->
+    <style>
+
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Regular"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff") format("woff");
+        font-style: normal;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Bold"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff") format("woff");
+        font-style: bold;
+        font-weight: 700;
+    }
+
+    .terminal-3264975899-matrix {
+        font-family: Fira Code, monospace;
+        font-size: 20px;
+        line-height: 24.4px;
+        font-variant-east-asian: full-width;
+    }
+
+    .terminal-3264975899-title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .terminal-3264975899-r1 { fill: #98a84b;font-weight: bold }
+.terminal-3264975899-r2 { fill: #c5c8c6 }
+.terminal-3264975899-r3 { fill: #868887 }
+.terminal-3264975899-r4 { fill: #c5c8c6;font-weight: bold }
+.terminal-3264975899-r5 { fill: #68a0b3 }
+.terminal-3264975899-r6 { fill: #d0b344;font-weight: bold }
+.terminal-3264975899-r7 { fill: #c5c8c6;font-style: italic; }
+    </style>
+
+    <defs>
+    <clipPath id="terminal-3264975899-clip-terminal">
+      <rect x="0" y="0" width="1365.3999999999999" height="511.4" />
+    </clipPath>
+    <clipPath id="terminal-3264975899-line-0">
+    <rect x="0" y="1.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-1">
+    <rect x="0" y="25.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-2">
+    <rect x="0" y="50.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-3">
+    <rect x="0" y="74.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-4">
+    <rect x="0" y="99.1" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-5">
+    <rect x="0" y="123.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-6">
+    <rect x="0" y="147.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-7">
+    <rect x="0" y="172.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-8">
+    <rect x="0" y="196.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-9">
+    <rect x="0" y="221.1" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-10">
+    <rect x="0" y="245.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-11">
+    <rect x="0" y="269.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-12">
+    <rect x="0" y="294.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-13">
+    <rect x="0" y="318.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-14">
+    <rect x="0" y="343.1" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-15">
+    <rect x="0" y="367.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-16">
+    <rect x="0" y="391.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-17">
+    <rect x="0" y="416.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-18">
+    <rect x="0" y="440.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3264975899-line-19">
+    <rect x="0" y="465.1" width="1366.4" height="24.65"/>
+            </clipPath>
+    </defs>
+
+    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="1383" height="560.4" rx="8"/><text class="terminal-3264975899-title" fill="#c5c8c6" text-anchor="middle" x="691" y="27">coherence-scanner:&#160;live&#160;scan,&#160;13&#160;Oct&#160;2026</text>
+            <g transform="translate(26,22)">
+            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>
+            <circle cx="22" cy="0" r="7" fill="#febc2e"/>
+            <circle cx="44" cy="0" r="7" fill="#28c840"/>
+            </g>
+        
+    <g transform="translate(9, 41)" clip-path="url(#terminal-3264975899-clip-terminal)">
+    
+    <g class="terminal-3264975899-matrix">
+    <text class="terminal-3264975899-r1" x="0" y="20" textLength="500.2" clip-path="url(#terminal-3264975899-line-0)">$&#160;uv&#160;run&#160;coherence-scanner&#160;scan&#160;--pages&#160;5</text><text class="terminal-3264975899-r2" x="1366.4" y="20" textLength="12.2" clip-path="url(#terminal-3264975899-line-0)">
+</text><text class="terminal-3264975899-r3" x="0" y="44.4" textLength="951.6" clip-path="url(#terminal-3264975899-line-1)">snapshot:&#160;499&#160;Polymarket&#160;events,&#160;500&#160;Kalshi&#160;events,&#160;14278/15068&#160;markets&#160;priced</text><text class="terminal-3264975899-r2" x="1366.4" y="44.4" textLength="12.2" clip-path="url(#terminal-3264975899-line-1)">
+</text><text class="terminal-3264975899-r4" x="0" y="68.8" textLength="451.4" clip-path="url(#terminal-3264975899-line-2)">kind&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;dev&#160;&#160;&#160;&#160;edge&#160;&#160;title</text><text class="terminal-3264975899-r2" x="1366.4" y="68.8" textLength="12.2" clip-path="url(#terminal-3264975899-line-2)">
+</text><text class="terminal-3264975899-r2" x="0" y="93.2" textLength="183" clip-path="url(#terminal-3264975899-line-3)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="93.2" textLength="85.4" clip-path="url(#terminal-3264975899-line-3)">&#160;+0.095</text><text class="terminal-3264975899-r6" x="280.6" y="93.2" textLength="85.4" clip-path="url(#terminal-3264975899-line-3)">&#160;+0.025</text><text class="terminal-3264975899-r2" x="366" y="93.2" textLength="524.6" clip-path="url(#terminal-3264975899-line-3)">&#160;&#160;polymarket:&#160;Pro&#160;Football:&#160;2026&#160;MVP&#160;Winner</text><text class="terminal-3264975899-r2" x="1366.4" y="93.2" textLength="12.2" clip-path="url(#terminal-3264975899-line-3)">
+</text><text class="terminal-3264975899-r2" x="0" y="117.6" textLength="183" clip-path="url(#terminal-3264975899-line-4)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="117.6" textLength="85.4" clip-path="url(#terminal-3264975899-line-4)">&#160;+0.020</text><text class="terminal-3264975899-r6" x="280.6" y="117.6" textLength="85.4" clip-path="url(#terminal-3264975899-line-4)">&#160;+0.018</text><text class="terminal-3264975899-r2" x="366" y="117.6" textLength="1000.4" clip-path="url(#terminal-3264975899-line-4)">&#160;&#160;polymarket:&#160;Who&#160;wins&#160;the&#160;Senate&#160;pending&#160;oil&#160;above&#160;or&#160;below&#160;$80&#160;before&#160;the&#160;midter</text><text class="terminal-3264975899-r2" x="1366.4" y="117.6" textLength="12.2" clip-path="url(#terminal-3264975899-line-4)">
+</text><text class="terminal-3264975899-r2" x="0" y="142" textLength="183" clip-path="url(#terminal-3264975899-line-5)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="142" textLength="85.4" clip-path="url(#terminal-3264975899-line-5)">&#160;-0.023</text><text class="terminal-3264975899-r6" x="280.6" y="142" textLength="85.4" clip-path="url(#terminal-3264975899-line-5)">&#160;+0.013</text><text class="terminal-3264975899-r2" x="366" y="142" textLength="756.4" clip-path="url(#terminal-3264975899-line-5)">&#160;&#160;polymarket:&#160;October&#160;2026&#160;1st,&#160;2nd,&#160;or&#160;3rd&#160;hottest&#160;on&#160;record?</text><text class="terminal-3264975899-r2" x="1366.4" y="142" textLength="12.2" clip-path="url(#terminal-3264975899-line-5)">
+</text><text class="terminal-3264975899-r2" x="0" y="166.4" textLength="183" clip-path="url(#terminal-3264975899-line-6)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="166.4" textLength="85.4" clip-path="url(#terminal-3264975899-line-6)">&#160;+0.028</text><text class="terminal-3264975899-r6" x="280.6" y="166.4" textLength="85.4" clip-path="url(#terminal-3264975899-line-6)">&#160;+0.010</text><text class="terminal-3264975899-r2" x="366" y="166.4" textLength="902.8" clip-path="url(#terminal-3264975899-line-6)">&#160;&#160;polymarket:&#160;Brazil&#160;Presidential&#160;Election&#160;Second&#160;Round:&#160;Margin&#160;of&#160;Victory</text><text class="terminal-3264975899-r2" x="1366.4" y="166.4" textLength="12.2" clip-path="url(#terminal-3264975899-line-6)">
+</text><text class="terminal-3264975899-r2" x="0" y="190.8" textLength="183" clip-path="url(#terminal-3264975899-line-7)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="190.8" textLength="85.4" clip-path="url(#terminal-3264975899-line-7)">&#160;+0.022</text><text class="terminal-3264975899-r6" x="280.6" y="190.8" textLength="85.4" clip-path="url(#terminal-3264975899-line-7)">&#160;+0.010</text><text class="terminal-3264975899-r2" x="366" y="190.8" textLength="475.8" clip-path="url(#terminal-3264975899-line-7)">&#160;&#160;polymarket:&#160;Fed&#160;Decision&#160;in&#160;December?</text><text class="terminal-3264975899-r2" x="1366.4" y="190.8" textLength="12.2" clip-path="url(#terminal-3264975899-line-7)">
+</text><text class="terminal-3264975899-r2" x="0" y="215.2" textLength="183" clip-path="url(#terminal-3264975899-line-8)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="215.2" textLength="85.4" clip-path="url(#terminal-3264975899-line-8)">&#160;+0.056</text><text class="terminal-3264975899-r6" x="280.6" y="215.2" textLength="85.4" clip-path="url(#terminal-3264975899-line-8)">&#160;+0.008</text><text class="terminal-3264975899-r2" x="366" y="215.2" textLength="866.2" clip-path="url(#terminal-3264975899-line-8)">&#160;&#160;polymarket:&#160;Republican&#160;Senate&#160;seats&#160;after&#160;the&#160;2026&#160;midterm&#160;elections?</text><text class="terminal-3264975899-r2" x="1366.4" y="215.2" textLength="12.2" clip-path="url(#terminal-3264975899-line-8)">
+</text><text class="terminal-3264975899-r2" x="0" y="239.6" textLength="183" clip-path="url(#terminal-3264975899-line-9)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="239.6" textLength="85.4" clip-path="url(#terminal-3264975899-line-9)">&#160;-0.042</text><text class="terminal-3264975899-r6" x="280.6" y="239.6" textLength="85.4" clip-path="url(#terminal-3264975899-line-9)">&#160;+0.008</text><text class="terminal-3264975899-r2" x="366" y="239.6" textLength="1000.4" clip-path="url(#terminal-3264975899-line-9)">&#160;&#160;polymarket:&#160;How&#160;many&#160;West&#160;Nile&#160;neuroinvasive&#160;disease&#160;cases&#160;will&#160;be&#160;reported&#160;amon</text><text class="terminal-3264975899-r2" x="1366.4" y="239.6" textLength="12.2" clip-path="url(#terminal-3264975899-line-9)">
+</text><text class="terminal-3264975899-r2" x="0" y="264" textLength="183" clip-path="url(#terminal-3264975899-line-10)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="264" textLength="85.4" clip-path="url(#terminal-3264975899-line-10)">&#160;+0.063</text><text class="terminal-3264975899-r6" x="280.6" y="264" textLength="85.4" clip-path="url(#terminal-3264975899-line-10)">&#160;+0.006</text><text class="terminal-3264975899-r2" x="366" y="264" textLength="390.4" clip-path="url(#terminal-3264975899-line-10)">&#160;&#160;polymarket:&#160;NHL:&#160;2027&#160;Champion</text><text class="terminal-3264975899-r2" x="1366.4" y="264" textLength="12.2" clip-path="url(#terminal-3264975899-line-10)">
+</text><text class="terminal-3264975899-r2" x="0" y="288.4" textLength="183" clip-path="url(#terminal-3264975899-line-11)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="288.4" textLength="85.4" clip-path="url(#terminal-3264975899-line-11)">&#160;+0.023</text><text class="terminal-3264975899-r6" x="280.6" y="288.4" textLength="85.4" clip-path="url(#terminal-3264975899-line-11)">&#160;+0.006</text><text class="terminal-3264975899-r2" x="366" y="288.4" textLength="463.6" clip-path="url(#terminal-3264975899-line-11)">&#160;&#160;polymarket:&#160;Fed&#160;Decision&#160;in&#160;January?</text><text class="terminal-3264975899-r2" x="1366.4" y="288.4" textLength="12.2" clip-path="url(#terminal-3264975899-line-11)">
+</text><text class="terminal-3264975899-r2" x="0" y="312.8" textLength="183" clip-path="url(#terminal-3264975899-line-12)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="312.8" textLength="85.4" clip-path="url(#terminal-3264975899-line-12)">&#160;+0.046</text><text class="terminal-3264975899-r6" x="280.6" y="312.8" textLength="85.4" clip-path="url(#terminal-3264975899-line-12)">&#160;+0.003</text><text class="terminal-3264975899-r2" x="366" y="312.8" textLength="561.2" clip-path="url(#terminal-3264975899-line-12)">&#160;&#160;polymarket:&#160;Anthropic&#160;IPO&#160;Closing&#160;Market&#160;Cap</text><text class="terminal-3264975899-r2" x="1366.4" y="312.8" textLength="12.2" clip-path="url(#terminal-3264975899-line-12)">
+</text><text class="terminal-3264975899-r2" x="0" y="337.2" textLength="183" clip-path="url(#terminal-3264975899-line-13)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="337.2" textLength="85.4" clip-path="url(#terminal-3264975899-line-13)">&#160;+0.014</text><text class="terminal-3264975899-r6" x="280.6" y="337.2" textLength="85.4" clip-path="url(#terminal-3264975899-line-13)">&#160;+0.003</text><text class="terminal-3264975899-r2" x="366" y="337.2" textLength="536.8" clip-path="url(#terminal-3264975899-line-13)">&#160;&#160;polymarket:&#160;MLB&#160;World&#160;Series&#160;Champion&#160;2026</text><text class="terminal-3264975899-r2" x="1366.4" y="337.2" textLength="12.2" clip-path="url(#terminal-3264975899-line-13)">
+</text><text class="terminal-3264975899-r2" x="0" y="361.6" textLength="183" clip-path="url(#terminal-3264975899-line-14)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="361.6" textLength="85.4" clip-path="url(#terminal-3264975899-line-14)">&#160;-0.039</text><text class="terminal-3264975899-r6" x="280.6" y="361.6" textLength="85.4" clip-path="url(#terminal-3264975899-line-14)">&#160;+0.002</text><text class="terminal-3264975899-r2" x="366" y="361.6" textLength="927.2" clip-path="url(#terminal-3264975899-line-14)">&#160;&#160;polymarket:&#160;How&#160;many&#160;more&#160;Millennium&#160;Prize&#160;Problems&#160;will&#160;AI&#160;solve&#160;in&#160;2026?</text><text class="terminal-3264975899-r2" x="1366.4" y="361.6" textLength="12.2" clip-path="url(#terminal-3264975899-line-14)">
+</text><text class="terminal-3264975899-r2" x="0" y="386" textLength="183" clip-path="url(#terminal-3264975899-line-15)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="386" textLength="85.4" clip-path="url(#terminal-3264975899-line-15)">&#160;+0.034</text><text class="terminal-3264975899-r6" x="280.6" y="386" textLength="85.4" clip-path="url(#terminal-3264975899-line-15)">&#160;+0.001</text><text class="terminal-3264975899-r2" x="366" y="386" textLength="390.4" clip-path="url(#terminal-3264975899-line-15)">&#160;&#160;polymarket:&#160;NBA:&#160;2027&#160;Champion</text><text class="terminal-3264975899-r2" x="1366.4" y="386" textLength="12.2" clip-path="url(#terminal-3264975899-line-15)">
+</text><text class="terminal-3264975899-r2" x="0" y="410.4" textLength="183" clip-path="url(#terminal-3264975899-line-16)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="410.4" textLength="85.4" clip-path="url(#terminal-3264975899-line-16)">&#160;+1.533</text><text class="terminal-3264975899-r3" x="280.6" y="410.4" textLength="85.4" clip-path="url(#terminal-3264975899-line-16)">&#160;+0.000</text><text class="terminal-3264975899-r2" x="366" y="410.4" textLength="732" clip-path="url(#terminal-3264975899-line-16)">&#160;&#160;polymarket:&#160;Lowest&#160;temperature&#160;in&#160;Sao&#160;Paulo&#160;on&#160;October&#160;13?</text><text class="terminal-3264975899-r2" x="1366.4" y="410.4" textLength="12.2" clip-path="url(#terminal-3264975899-line-16)">
+</text><text class="terminal-3264975899-r2" x="0" y="434.8" textLength="183" clip-path="url(#terminal-3264975899-line-17)">exclusive_sum&#160;&#160;</text><text class="terminal-3264975899-r5" x="183" y="434.8" textLength="85.4" clip-path="url(#terminal-3264975899-line-17)">&#160;+0.455</text><text class="terminal-3264975899-r3" x="280.6" y="434.8" textLength="85.4" clip-path="url(#terminal-3264975899-line-17)">&#160;+0.000</text><text class="terminal-3264975899-r2" x="366" y="434.8" textLength="634.4" clip-path="url(#terminal-3264975899-line-17)">&#160;&#160;polymarket:&#160;Arsenal&#160;FC&#160;vs.&#160;Lille&#160;OSC&#160;-&#160;Exact&#160;Score</text><text class="terminal-3264975899-r2" x="1366.4" y="434.8" textLength="12.2" clip-path="url(#terminal-3264975899-line-17)">
+</text><text class="terminal-3264975899-r2" x="1366.4" y="459.2" textLength="12.2" clip-path="url(#terminal-3264975899-line-18)">
+</text><text class="terminal-3264975899-r7" x="0" y="483.6" textLength="1024.8" clip-path="url(#terminal-3264975899-line-19)">140&#160;incoherent&#160;sets.&#160;13&#160;show&#160;a&#160;positive&#160;edge&#160;at&#160;the&#160;best&#160;quotes&#160;after&#160;modelled&#160;fees.</text><text class="terminal-3264975899-r2" x="1366.4" y="483.6" textLength="12.2" clip-path="url(#terminal-3264975899-line-19)">
+</text><text class="terminal-3264975899-r7" x="0" y="508" textLength="1110.2" clip-path="url(#terminal-3264975899-line-20)">Quotes&#160;are&#160;top&#160;of&#160;book&#160;only&#160;and&#160;ignore&#160;depth.&#160;This&#160;is&#160;research&#160;output,&#160;not&#160;advice&#160;to&#160;trade.</text><text class="terminal-3264975899-r2" x="1366.4" y="508" textLength="12.2" clip-path="url(#terminal-3264975899-line-20)">
+</text>
+    </g>
+    </g>
+</svg>
