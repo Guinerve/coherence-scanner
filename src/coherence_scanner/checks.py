@@ -40,27 +40,24 @@ def check_exclusive(event: Event) -> Violation | None:
         return None
     if event.exhaustive and len(ms) < len(event.markets):
         return None  # an unpriced outcome could be the winner: neither the sum nor a buy-all edge means anything
-    mid_sum = sum(m.mid for m in ms)  # type: ignore[misc]
-    asks = [m.ask for m in ms]
-    bids = [m.bid for m in ms]
+    mid_sum = sum(m.mid for m in ms if m.mid is not None)
+    asks = [m.ask for m in ms if m.ask is not None]
+    bids = [m.bid for m in ms if m.bid is not None]
+    all_asks, all_bids = len(asks) == len(ms), len(bids) == len(ms)
     edge, legs, note = 0.0, [], ""
     if event.exhaustive:
         deviation = mid_sum - 1
-        if all(a is not None for a in asks):  # buy Yes on everything: exactly one pays $1
-            cost = sum(a + fee_for(m, a) for m, a in zip(ms, asks))  # type: ignore[operator]
+        if all_asks:  # buy Yes on everything: exactly one pays $1
+            cost = sum(a + fee_for(m, a) for m, a in zip(ms, asks, strict=True))
             if 1 - cost > edge:
-                edge, legs = 1 - cost, [f"BUY YES {m.ref} @ {m.ask:.3f}" for m in ms]
-        if all(b is not None for b in bids):  # sell Yes on everything
-            proceeds = sum(b - fee_for(m, b) for m, b in zip(ms, bids))  # type: ignore[operator]
-            if proceeds - 1 > edge:
-                edge, legs = proceeds - 1, [f"SELL YES {m.ref} @ {m.bid:.3f}" for m in ms]
+                edge, legs = 1 - cost, [f"BUY YES {m.ref} @ {a:.3f}" for m, a in zip(ms, asks, strict=True)]
     else:  # at most one resolves yes: only a sum above 1 is a violation
         deviation = max(0.0, mid_sum - 1)
-        if all(b is not None for b in bids):
-            proceeds = sum(b - fee_for(m, b) for m, b in zip(ms, bids))  # type: ignore[operator]
-            if proceeds - 1 > edge:
-                edge, legs = proceeds - 1, [f"SELL YES {m.ref} @ {m.bid:.3f}" for m in ms]
         note = "not exhaustive: sum below 1 is allowed"
+    if all_bids:  # sell Yes on everything: at most one pays $1
+        proceeds = sum(b - fee_for(m, b) for m, b in zip(ms, bids, strict=True))
+        if proceeds - 1 > edge:
+            edge, legs = proceeds - 1, [f"SELL YES {m.ref} @ {b:.3f}" for m, b in zip(ms, bids, strict=True)]
     if not event.exhaustive and deviation == 0 and edge <= 0:
         return None
     return Violation("exclusive_sum", f"{event.venue}: {event.title}", deviation, edge, legs, note)
@@ -71,8 +68,7 @@ def check_nesting(a: Market, b: Market, why: str = "") -> Violation | None:
     if a.mid is None or b.mid is None:
         return None
     dev = a.mid - b.mid
-    edge = 0.0
-    legs: list[str] = []
+    edge, legs = 0.0, []
     if a.bid is not None and b.ask is not None:  # sell A, buy B: B pays whenever A does
         edge = a.bid - fee_for(a, a.bid) - b.ask - fee_for(b, b.ask)
         legs = [f"SELL YES {a.ref} @ {a.bid:.3f}", f"BUY YES {b.ref} @ {b.ask:.3f}"]
@@ -84,7 +80,7 @@ def check_cross_venue(a: Market, b: Market, why: str = "") -> Violation | None:
     if a.mid is None or b.mid is None:
         return None
     dev = a.mid - b.mid
-    cands = []
+    cands: list[tuple[float, list[str]]] = []
     if a.bid is not None and b.ask is not None:
         cands.append((a.bid - fee_for(a, a.bid) - b.ask - fee_for(b, b.ask), [f"SELL YES {a.ref} @ {a.bid:.3f}", f"BUY YES {b.ref} @ {b.ask:.3f}"]))
     if b.bid is not None and a.ask is not None:

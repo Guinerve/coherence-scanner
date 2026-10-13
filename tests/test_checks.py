@@ -58,7 +58,7 @@ def test_exhaustive_set_priced_over_one_gives_a_sell_edge_only_if_bids_clear():
 def test_wide_spreads_mean_deviation_without_edge():
     e = Event("polymarket", "1", "t", [mk("polymarket", "a", .30, .70), mk("polymarket", "b", .30, .70)], True, True)
     v = checks.check_exclusive(e)
-    assert v.deviation == pytest.approx(0.0) and v.edge < 0 or v.edge == 0
+    assert v.deviation == pytest.approx(0.0) and v.edge <= 0 and v.legs == []
 
 
 def test_underpriced_exhaustive_set_gives_a_buy_edge():
@@ -177,8 +177,6 @@ def test_unresolvable_or_malformed_relations_are_reported_not_silent():
 
 
 def test_projection_failure_raises(monkeypatch):
-    import scipy.optimize
-
     class R:
         success, message, x = False, "infeasible", None
     monkeypatch.setattr("coherence_scanner.project.minimize", lambda *a, **k: R())
@@ -196,3 +194,86 @@ def test_coherent_sets_are_not_counted_as_violations():
 def test_save_creates_missing_directory(tmp_path):
     relations.save(tmp_path / "data" / "r.yaml", [])
     assert (tmp_path / "data" / "r.yaml").exists()
+
+
+# ---------- regressions found in the review ----------
+def test_polymarket_pages_do_not_repeat_events():
+    """Regression: offset paging over a list sorted by live volume returned 15 of 485 events twice."""
+    import httpx
+
+    from coherence_scanner.venues import fetch_polymarket
+
+    def ev(i):
+        return {"id": str(i), "title": f"E{i}", "markets": []}
+
+    pages = {0: [ev(1), ev(2)], 2: [ev(2), ev(3)], 4: []}
+
+    def handler(request):
+        return httpx.Response(200, json=pages[int(request.url.params["offset"])])
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as http:
+        out = fetch_polymarket(http, pages=3, page_size=2)
+    assert [e.id for e in out] == ["1", "2", "3"]
+
+
+def test_empty_kalshi_book_is_unpriced_not_fifty_percent():
+    """Regression: no bids (0.00) and no offers (1.00) gave a mid of 0.50 and inflated set sums."""
+    raw = {"event_ticker": "K", "title": "t", "mutually_exclusive": True, "markets": [
+        {"ticker": "K-A", "status": "active", "yes_bid_dollars": "0.0000", "yes_ask_dollars": "1.0000",
+         "last_price_dollars": "0.0000"},
+        {"ticker": "K-B", "status": "active", "yes_bid_dollars": "0.0000", "yes_ask_dollars": "0.0200",
+         "last_price_dollars": "0.0000"}]}
+    e = parse_kalshi_event(raw)
+    empty, longshot = e.markets
+    assert empty.mid is None
+    assert longshot.mid == pytest.approx(0.01)  # one real side still gives a price
+
+
+def test_empty_polymarket_book_is_unpriced_not_fifty_percent():
+    """Regression: Gamma shows 0.5 as the price of a market with no orders at all."""
+    raw = {"id": "1", "title": "t", "negRisk": True, "markets": [
+        {"id": "a", "question": "A?", "outcomePrices": '["0.5","0.5"]', "bestAsk": 1, "active": True, "closed": False},
+        {"id": "b", "question": "B?", "outcomePrices": '["0.0945","0.9055"]', "bestAsk": 0.189,
+         "active": True, "closed": False}]}
+    e = parse_polymarket_event(raw)
+    empty, onesided = e.markets
+    assert empty.mid is None
+    assert onesided.mid == pytest.approx(0.0945)
+    assert checks.check_exclusive(e) is None  # exhaustive set with an unpriced outcome: no claim
+
+
+def test_coherent_relation_pairs_are_not_counted_as_violations():
+    """Regression: approved pairs were reported even when the prices agreed."""
+    from coherence_scanner.cli import scan
+
+    rels = [relations.Relation("r1", "equivalent", "polymarket:p", "kalshi:k", "approved"),
+            relations.Relation("r2", "implies", "polymarket:p", "kalshi:k2", "approved")]
+    poly = [Event("polymarket", "e", "e", [mk("polymarket", "p", .50, .52)])]
+    kal = [Event("kalshi", "e", "e", [mk("kalshi", "k", .50, .52), mk("kalshi", "k2", .70, .72)])]
+    assert scan(poly, kal, rels) == []
+
+
+def test_new_relation_ids_do_not_reuse_existing_ones():
+    """Regression: ids came from the list length, so deleting r2 made the next proposal reuse r3."""
+    existing = [relations.Relation("r1", "equivalent", "a", "b"), relations.Relation("r3", "equivalent", "c", "d")]
+    assert relations.next_id(existing) == "r4"
+    assert relations.next_id([]) == "r1"
+
+
+def test_malformed_relations_file_gives_a_clear_error(tmp_path):
+    p = tmp_path / "r.yaml"
+    p.write_text("version: 1\nrelations:\n  - id: r1\n    a: polymarket:1\n")
+    with pytest.raises(ValueError, match="r.yaml"):
+        relations.load(p)
+
+
+def test_network_failure_exits_with_code_2(monkeypatch, capsys):
+    import httpx
+
+    from coherence_scanner import cli
+
+    def boom(pages):
+        raise httpx.ConnectError("no route")
+    monkeypatch.setattr(cli, "snapshot", boom)
+    assert cli.main(["scan"]) == 2
+    assert "could not" in capsys.readouterr().err.lower()

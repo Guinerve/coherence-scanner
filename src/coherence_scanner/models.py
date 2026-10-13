@@ -11,7 +11,7 @@ class Market:
     question: str
     bid: float | None  # best price to SELL yes at (what a seller receives), 0..1
     ask: float | None  # best price to BUY yes at, 0..1
-    last: float | None = None
+    last: float | None = None  # last trade, or the venue's displayed price; None if there is neither
     volume_24h: float | None = None
     rules: str = ""  # resolution criteria, shown side by side when matching venues
     end_date: str | None = None

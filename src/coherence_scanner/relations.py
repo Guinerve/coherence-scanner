@@ -36,9 +36,23 @@ def load(path: Path) -> list[Relation]:
     if not path.exists():
         return []
     doc = yaml.safe_load(path.read_text()) or {}
+    if not isinstance(doc, dict):
+        raise ValueError(f"{path}: expected a mapping with 'version' and 'relations'")  # noqa: TRY004 (bad file content)
     if doc.get("version", VERSION) != VERSION:
         raise ValueError(f"{path}: unsupported relations version {doc.get('version')}")
-    return [Relation(**r) for r in doc.get("relations", [])]
+    out = []
+    for i, r in enumerate(doc.get("relations") or [], start=1):
+        try:
+            out.append(Relation(**r))
+        except TypeError as exc:
+            raise ValueError(f"{path}: relation {i} needs id, type, a and b ({exc})") from exc
+    return out
+
+
+def next_id(relations: list[Relation]) -> str:
+    """The next free id of the form rN. Ids are never reused, even after a relation is deleted."""
+    nums = [int(r.id[1:]) for r in relations if r.id[:1] == "r" and r.id[1:].isdigit()]
+    return f"r{max(nums, default=0) + 1}"
 
 
 def save(path: Path, relations: list[Relation]) -> None:

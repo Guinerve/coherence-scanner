@@ -8,6 +8,7 @@ subject to: exhaustive sets sum to 1, exclusive sets sum to <= 1, nested pairs q
 from __future__ import annotations
 
 from collections.abc import Sequence
+from typing import Any
 
 import numpy as np
 from scipy.optimize import minimize
@@ -32,7 +33,7 @@ def project(
         q = np.clip(q, EPS, 1 - EPS)
         return np.log(q / p) - np.log((1 - q) / (1 - p))
 
-    cons = []
+    cons: list[dict[str, Any]] = []
     for s in exhaustive_sets:
         idx = list(s)
         cons.append({"type": "eq", "fun": lambda q, idx=idx: q[idx].sum() - 1, "jac": lambda q, idx=idx: _ind(len(q), idx)})
